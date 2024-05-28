@@ -1,3 +1,85 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+@font-face {
+  font-family: 'GothicNeo';
+  src: url('/fonts/AppleSDGothicNeo.ttc') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Kdam';
+  src: url('/fonts/KdamThmorRegular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html,
+body,
+section {
+  @apply bg-background;
+  font-family: 'GothicNeo', sans-serif;
+}
+
+.btn {
+  @apply px-4 py-1 rounded font-bold;
+}
+
+.btn-primary {
+  @apply bg-primary;
+}
+
+.btn-outline-primary {
+  @apply border-2 border-white;
+}
+.heroPage,
+.heroBanner {
+  @apply relative p-1 bg-bottom bg-cover bg-no-repeat text-white text-center min-h-[60vh] flex flex-col items-center justify-center;
+}
+.heroBanner {
+  @apply bg-[url('/HeroBack.jpg')] ;
+}
+
+
+.containerContadores {
+  @apply grid grid-cols-3 absolute -bottom-[30px];
+}
+
+.contador {
+  @apply bg-primary text-highlight p-[1rem] rounded-xl flex flex-col items-center shadow-[6px_6px_2px_black] max-w-[95%];
+  font-family: "Kdam", sans-serif;
+}
+
+.cardContainer h1,
+section h1:first-child {
+  font-family: "Kdam", sans-serif;
+}
+.accordionStyle li::before,
+.CardServices li::before {
+  content: "- ";
+  margin-right: 0.5rem;
+  /* Espaço entre o hifen e o texto do item */
+}
+
+.contactsList li:first-child {
+  @apply underline text-xl ml-6;
+}
+
+.contactsList li {
+  @apply flex gap-3 items-center
+}
+
+.accordionStyle>div{
+  @apply bg-light border;
+}
+.accordionStyle h2 span{
+  @apply text-black
+}
+
+.accordionStyle hr{
+  @apply bg-dark
+}
