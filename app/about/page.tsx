@@ -10,7 +10,7 @@ export default function AboutPage() {
   return (
     <>
       <SectionTitle
-        subTitle="Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic"
+        subTitle="Há mais de uma década, a Mil Postos tem se estabelecido como a principal empresa de manutenção de postos de combustíveis em Campo Grande, MS. Nosso foco é oferecer serviços de manutenção eficientes e confiáveis, assegurando a operação contínua e segura dos postos de combustíveis. Contamos com uma equipe altamente qualificada e utilizamos tecnologias de ponta para proporcionar soluções inovadoras e sustentáveis. Comprometidos com a excelência e a transparência, buscamos continuamente superar as expectativas de nossos clientes, promovendo práticas responsáveis e seguras para todos os envolvidos."
         title="A Mil Postos"
       />
       <div className="cardContainer mt-5 mb-5 grid grid-cols-1 gap-5 md:px-20 lg:grid-cols-3 lg:px-10 lg:mb-10">

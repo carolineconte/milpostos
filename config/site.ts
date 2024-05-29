@@ -77,19 +77,21 @@ export const siteConfig = {
     {
       title: "Visão",
       list: [
-        "but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and",
+        "Ser a referência nacional em serviços de manutenção de postos de combustíveis, reconhecida pela excelência, inovação e comprometimento com a segurança e sustentabilidade.",
       ],
     },
     {
       title: "Missão",
       list: [
-        "but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and",
+        "Fornecer soluções de manutenção de alta qualidade para postos de combustíveis, garantindo a eficiência operacional e a satisfação dos nossos clientes através de uma equipe qualificada e do uso de tecnologias avançadas.",
       ],
     },
     {
       title: "Valores",
       list: [
-        "but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and",
+        "- Compromisso com a excelência em todos os serviços prestados.",
+        "- Priorizar a segurança em todas as operações, protegendo nossos colaboradores, clientes e o meio ambiente.",
+        "- Agir com integridade, transparência e respeito em todas as nossas relações.",
       ],
     },
   ],
@@ -100,29 +102,29 @@ export const siteConfig = {
         "Ouvimos com atenção as necessidades dos nossos clientes e proporcionamos um atendimento adequado. Como responsáveis por suas instalações, trabalhando com profissionalismo, adaptando as exigências do proprietário dentro das normas técnicas.",
     },
     {
-      title: "Atendimento ao Cliente",
+      title: "Experiência Consolidada",
       content:
-        "Ouvimos com atenção as necessidades dos nossos clientes e proporcionamos um atendimento adequado. Como responsáveis por suas instalações, trabalhando com profissionalismo, adaptando as exigências do proprietário dentro das normas técnicas.",
+        "Com mais de 10 anos de atuação, acumulamos um vasto conhecimento e expertise que garantem a excelência em nossos serviços.",
     },
     {
-      title: "Atendimento ao Cliente",
+      title: "Rapidez e Eficiência",
       content:
-        "Ouvimos com atenção as necessidades dos nossos clientes e proporcionamos um atendimento adequado. Como responsáveis por suas instalações, trabalhando com profissionalismo, adaptando as exigências do proprietário dentro das normas técnicas.",
+        "Nosso objetivo é resolver qualquer problema com agilidade e precisão, garantindo a continuidade das operações dos postos de combustíveis.",
     },
     {
-      title: "Atendimento ao Cliente",
+      title: "Equipe Qualificada",
       content:
-        "Ouvimos com atenção as necessidades dos nossos clientes e proporcionamos um atendimento adequado. Como responsáveis por suas instalações, trabalhando com profissionalismo, adaptando as exigências do proprietário dentro das normas técnicas.",
+        "Contamos com profissionais altamente capacitados e em constante treinamento para assegurar a melhor solução para cada necessidade.",
     },
     {
-      title: "Atendimento ao Cliente",
+      title: "Manutenção Preventiva",
       content:
-        "Ouvimos com atenção as necessidades dos nossos clientes e proporcionamos um atendimento adequado. Como responsáveis por suas instalações, trabalhando com profissionalismo, adaptando as exigências do proprietário dentro das normas técnicas.",
+        "Oferecemos programas de manutenção preventiva personalizados para evitar falhas inesperadas e prolongar a vida útil dos equipamentos, assegurando um funcionamento contínuo e seguro dos postos de combustíveis.",
     },
     {
-      title: "Atendimento ao Cliente",
+      title: "Cobertura Abrangente",
       content:
-        "Ouvimos com atenção as necessidades dos nossos clientes e proporcionamos um atendimento adequado. Como responsáveis por suas instalações, trabalhando com profissionalismo, adaptando as exigências do proprietário dentro das normas técnicas.",
+        "Atendemos uma ampla região, garantindo suporte rápido e eficiente em Campo Grande, MS, e áreas circunvizinhas, proporcionando tranquilidade e confiabilidade aos nossos clientes.",
     },
   ],
   contentSevices: [
