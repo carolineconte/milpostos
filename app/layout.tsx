@@ -7,6 +7,7 @@ import { Providers } from "./providers";
 import { fontSans } from "@/config/fonts";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/Footer";
+import Whatsbtn from "@/components/Whatsbtn";
 
 export const metadata = {
   title: "Mil Postos",
@@ -45,6 +46,7 @@ export default function RootLayout({
           <div className="">
             <Navbar />
             <main className="">{children}</main>
+            <Whatsbtn />
             <Footer />
           </div>
         </Providers>
