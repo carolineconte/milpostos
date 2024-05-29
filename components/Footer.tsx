@@ -31,7 +31,7 @@ export default function Footer() {
   ];
   const siteMap = [
     {
-      label: "Site Map",
+      label: "Site Map:",
       href: "#",
     },
     {
@@ -57,14 +57,19 @@ export default function Footer() {
   ];
 
   return (
-    <footer>
-      <div className="w-full flex flex-col p-3 bg-gray">
+    <footer className="">
+      <div
+        className="w-full flex flex-col p-3 bg-gray
+      md:flex-row flex-wrap lg:justify-center lg:px-10
+      "
+      >
         <div className="flex flex-col items-center">
           <Image src="/Logo.png" />
-          <strong className="text-sm text-center leading-3 font-extralight px-3 text-white">
+          <strong className="text-sm text-center leading-3 font-extralight px-3 text-white md:text-lg md:leading-5">
             A Mil Postos conta com mais de 10 anos no mercado de instalações e
             manutenções de postos de combustíveis.
           </strong>
+          {/* Links Sociais */}
           <div className="flex items-center justify-end gap-1 my-3">
             {Links.map((item) => (
               <Link
@@ -77,6 +82,7 @@ export default function Footer() {
             ))}
           </div>
         </div>
+        {/* Links Contato */}
         <ul className="contactsList my-3">
           <li>Contato</li>
           <li>
@@ -96,16 +102,19 @@ export default function Footer() {
             (67) 3045 - 4059
           </li>
         </ul>
-
-        {siteMap.map((item) => (
-          <Link
-            key={item.href}
-            className="text-white text-left cursor-pointer hover:bg-white/70 w-fit"
-            href="#"
-          >
-            {item.label}
-          </Link>
-        ))}
+        {/* Mapa do site */}
+        <ul className="flex flex-col md:mx-auto">
+          {siteMap.map((item) => (
+            <li key={item.href}>
+              <Link
+                className="text-white text-left cursor-pointer hover:bg-white/70 w-fit"
+                href="#"
+              >
+                {item.label}
+              </Link>
+            </li>
+          ))}
+        </ul>
       </div>
       <div className="border-t text-center text-small bg-gray leading-3 p-2">
         <small className="  ">

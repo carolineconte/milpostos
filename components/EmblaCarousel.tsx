@@ -19,9 +19,12 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
     useDotButton(emblaApi);
 
   return (
-    <section className="embla text-black">
+    <section className="embla text-black w-full">
       <div ref={emblaRef} className="embla__viewport">
-        <div className="embla__container my-2">
+        <div
+          className={`embla__container my-2 
+          ${!img ? "md:grid md:grid-cols-2 md:gap-3 lg:grid-cols-3" : ""} `}
+        >
           {slides.map((item: any, index: number) => (
             <div key={index} className="embla__slide">
               {img === true ? <Image alt="" src={item} /> : item}
@@ -30,7 +33,7 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
         </div>
       </div>
 
-      <div className="embla__controls">
+      <div className={`embla__controls ${!img ? "md:hidden" : ""} `}>
         <div className="embla__dots">
           {scrollSnaps.map((_, index) => (
             <DotButton

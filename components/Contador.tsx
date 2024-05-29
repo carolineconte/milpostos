@@ -22,10 +22,18 @@ const Contador = ({ finalValue, text, value }: Props) => {
 
   return (
     <div className="contador">
-      <p className="mb-0 text-4xl font-bold">
+      <p
+        className="mb-0 text-4xl font-bold
+      md:text-6xl"
+      >
         {finalValue ? contador.toString().padStart(2, "0") : value}
       </p>
-      <h2 className="text-sm text-center m-auto text-highlight mt-0">{text}</h2>
+      <h2
+        className="text-sm text-center m-auto mt-0
+      md:text-[1.5em] md:w-1/2"
+      >
+        {text}
+      </h2>
     </div>
   );
 };

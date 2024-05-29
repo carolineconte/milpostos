@@ -3,9 +3,9 @@ import SectionTitle from "../SectionTitle";
 
 export default function FornecedoresSection() {
   const slides = [
-    "Fornecedores1.png",
-    "Fornecedores1.png",
-    "Fornecedores1.png",
+    "/Fornecedores1.png",
+    "/Fornecedores1.png",
+    "/Fornecedores1.png",
   ];
 
   return (

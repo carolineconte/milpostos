@@ -20,7 +20,7 @@ module.exports = {
         dark: "#183C52",
         light: "#F8FAFC",
         gray: "#414141",
-        background: "#E2E8F0",
+        background: "#f1f5f9",
         cardBackground: "#FDFFFD",
       }
     },

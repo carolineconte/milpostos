@@ -36,28 +36,33 @@ section {
 .btn-outline-primary {
   @apply border-2 border-white;
 }
+
 .heroPage,
 .heroBanner {
-  @apply relative p-1 bg-bottom bg-cover bg-no-repeat text-white text-center min-h-[60vh] flex flex-col items-center justify-center;
+  @apply relative p-1 bg-bottom bg-cover bg-no-repeat text-white text-center flex flex-col items-center justify-center;
 }
+
 .heroBanner {
-  @apply bg-[url('/HeroBack.jpg')] ;
+  @apply bg-[url('/HeroBack.jpg')] min-h-[60vh];
+  @apply min-h-[55vh]
 }
 
 
 .containerContadores {
   @apply grid grid-cols-3 absolute -bottom-[30px];
+  @apply md:-bottom-[50px];
 }
 
 .contador {
-  @apply bg-primary text-highlight p-[1rem] rounded-xl flex flex-col items-center shadow-[6px_6px_2px_black] max-w-[95%];
-  font-family: "Kdam", sans-serif;
+  @apply bg-primary font-['Kdam'] text-white p-[1rem] rounded-xl flex flex-col items-center shadow-[6px_6px_2px_black] max-w-[95%];
+  @apply md:p-[1.3rem];
 }
 
 .cardContainer h1,
 section h1:first-child {
   font-family: "Kdam", sans-serif;
 }
+
 .accordionStyle li::before,
 .CardServices li::before {
   content: "- ";
@@ -73,13 +78,26 @@ section h1:first-child {
   @apply flex gap-3 items-center
 }
 
-.accordionStyle>div{
-  @apply bg-light border;
-}
-.accordionStyle h2 span{
-  @apply text-black
+.accordionStyle>div {
+  @apply md:bg-light/50 md:w-[90%] md:mx-auto;
 }
 
-.accordionStyle hr{
+.accordionStyle>div section div {
+  @apply bg-light flex flex-col w-full;
+}
+
+.accordionStyle>div section a {
+  @apply self-center;
+}
+
+.accordionStyle span:first-of-type {
+  @apply text-dark font-bold;
+  @apply md:text-2xl;
+}
+.accordionStyle span:last-of-type {
+  @apply text-gray font-light;
+  @apply md:text-lg md:leading-5;
+}
+.accordionStyle hr {
   @apply bg-dark
 }

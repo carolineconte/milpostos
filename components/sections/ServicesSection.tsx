@@ -1,11 +1,11 @@
-import { siteConfig } from "../config/site";
+import Card from "../Card";
+import EmblaCarousel from "../EmblaCarousel";
+import SectionTitle from "../SectionTitle";
 
-import Card from "./Card";
-import EmblaCarousel from "./EmblaCarousel";
-import SectionTitle from "./SectionTitle";
+import { siteConfig } from "@/config/site";
 export default function ServicesSection() {
   return (
-    <section className="px-3 mt-24">
+    <section className="px-3 mt-24 md:mt-20">
       <SectionTitle
         subTitle="De tanques a bombas de combustível, nossa equipe qualificada está pronta
         para atender todas as suas necessidades com qualidade e garantia."

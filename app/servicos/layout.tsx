@@ -1,13 +1,21 @@
+import Hero from "@/components/Hero";
+
 export default function DocsLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
   return (
-    <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
-      <div className="inline-block max-w-lg text-center justify-center">
+    <>
+      <Hero
+        background="bg-[url('/HEROServicos.jpg')]"
+        subTitle="Instalações e Manutenção para postos de combustíveis, entregamos 
+          excelência e qualidade dos nossos serviços para os nossos clientes "
+        title="Como podemos ajudar?"
+      />
+      <main className=" bg-background pb-10 text-center justify-center mt-5 px-2">
         {children}
-      </div>
-    </section>
+      </main>
+    </>
   );
 }

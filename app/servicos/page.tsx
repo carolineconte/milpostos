@@ -16,14 +16,7 @@ export default function Servicos() {
 
   return (
     <>
-      <section className="heroPage h-[60vh] bg-[url('/HEROServicos.jpg')]">
-        <h2>Como podemos ajudar?</h2>
-        <h1>
-          Instalações e Manutenção para postos de combustíveis, entregamos 
-          excelência e qualidade dos nossos serviços para os nossos clientes 
-        </h1>
-      </section>
-      <section className="mt-5 w-full text-black accordionStyle px-2">
+      <section className="mt-5 flex w-full text-black accordionStyle px-2">
         <Accordion
           className="p-2 flex text-black flex-col gap-1"
           motionProps={{
@@ -68,17 +61,19 @@ export default function Servicos() {
             <AccordionItem
               key={i}
               aria-label={item.titulo}
-              className="flex flex-col"
+              className="flex flex-col w-full md:p-2 containerTitulo"
               startContent={<PostoIcon />}
               subtitle={item.subtitulo}
               title={item.titulo}
             >
               {item.listas.map((listas, i) => (
                 <div key={i} className="p-3 ">
-                  <h3 className="font-bold text-left mt-3">{listas.titulo}</h3>
+                  <h3 className="font-bold text-left mt-3 md:text-xl">
+                    {listas.titulo}
+                  </h3>
                   <ul className="text-left ">
                     {listas.itens.map((itemLista, i) => (
-                      <li key={i} className="">
+                      <li key={i} className="md:text-lg">
                         {itemLista}
                       </li>
                     ))}
@@ -87,7 +82,7 @@ export default function Servicos() {
               ))}
               <Button
                 as={Link}
-                className="w-1/2 rounded-full bg-dark self-center"
+                className="rounded-full justify-self-center bg-dark w-1/2 self-center md:text-lg"
                 color="primary"
                 href="https://github.com/nextui-org/nextui"
                 variant="solid"

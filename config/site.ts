@@ -5,10 +5,6 @@ export const siteConfig = {
   description: "Make beautiful websites regardless of your design experience.",
   navItems: [
     {
-      label: "Home",
-      href: "/",
-    },
-    {
       label: "Serviços",
       href: "/servicos",
     },
@@ -296,6 +292,47 @@ export const siteConfig = {
         },
       ],
       botao: "Fale com nossos atendentes",
+    },
+  ],
+  produtos: [
+    {
+      categoria: "Bombas de Abastecimento",
+      produtos: [
+        { titulo: "Bomba de Abastecimento 1", img: "/produto.png" },
+        { titulo: "Bomba de Abastecimento 2", img: "/produto.png" },
+      ],
+    },
+    {
+      categoria: "Bicos de Abastecimento",
+      produtos: [
+        { titulo: "Bico de Abastecimento 1", img: "/produto.png" },
+        { titulo: "Bico de Abastecimento 2", img: "/produto.png" },
+        { titulo: "Bico de Abastecimento 1", img: "/produto.png" },
+        { titulo: "Bico de Abastecimento 2", img: "/produto.png" },
+        { titulo: "Bico de Abastecimento 1", img: "/produto.png" },
+        { titulo: "Bico de Abastecimento 2", img: "/produto.png" },
+      ],
+    },
+    {
+      categoria: "Mangueiras e Acessorios",
+      produtos: [
+        { titulo: "Mangueira 1", img: "/produto.png" },
+        { titulo: "Acessório 1", img: "/produto.png" },
+        { titulo: "Acessório 1", img: "/produto.png" },
+      ],
+    },
+    {
+      categoria: "Breakaway",
+      produtos: [
+        { titulo: "Breakaway 1", img: "/produto.png" },
+        { titulo: "Breakaway 2", img: "/produto.png" },
+        { titulo: "Breakaway 1", img: "/produto.png" },
+        { titulo: "Breakaway 2", img: "/produto.png" },
+        { titulo: "Breakaway 1", img: "/produto.png" },
+        { titulo: "Breakaway 2", img: "/produto.png" },
+        { titulo: "Breakaway 1", img: "/produto.png" },
+        { titulo: "Breakaway 2", img: "/produto.png" },
+      ],
     },
   ],
 };

@@ -1,13 +1,19 @@
+import Hero from "@/components/Hero";
 export default function AboutLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
   return (
-    <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
-      <div className="inline-block max-w-lg text-center justify-center">
+    <>
+      <Hero
+        background="bg-[url('/HEROAbout.jpg')]"
+        subTitle="Conheca nossa empresa"
+        title="Quem Somos"
+      />
+      <main className=" bg-background pb-10 text-center justify-center mt-5 px-10 md:px-20">
         {children}
-      </div>
-    </section>
+      </main>
+    </>
   );
 }
