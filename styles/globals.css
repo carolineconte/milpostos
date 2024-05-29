@@ -4,16 +4,16 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @font-face {
-  font-family: 'GothicNeo';
-  src: url('/fonts/AppleSDGothicNeo.ttc') format('truetype');
+  font-family: 'DIGIB';
+  src: url('/fonts/DIGIB.TTF') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
-  font-family: 'Kdam';
-  src: url('/fonts/KdamThmorRegular.ttf') format('truetype');
+  font-family: 'DIGILG';
+  src: url('/fonts/DIGILG.TTF') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -22,7 +22,7 @@ html,
 body,
 section {
   @apply bg-background;
-  font-family: 'GothicNeo', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .btn {
@@ -44,7 +44,8 @@ section {
 
 .heroBanner {
   @apply bg-[url('/HeroBack.jpg')] min-h-[60vh];
-  @apply min-h-[55vh]
+  @apply md:min-h-[55vh];
+  @apply lg:min-h-[70vh] lg:mt-10;
 }
 
 

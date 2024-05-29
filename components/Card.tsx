@@ -47,7 +47,7 @@ export default function Card({ title, list, icon }: Props) {
       {icon >= 0 && (
         <Button
           as={Link}
-          className="w-1/2 self-center"
+          className="w-1/2 self-center font-digib lg:text-lg"
           color="primary"
           href="https://github.com/nextui-org/nextui"
           variant="solid"

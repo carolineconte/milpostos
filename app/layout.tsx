@@ -9,11 +9,11 @@ import Navbar from "@/components/navbar";
 import Footer from "@/components/Footer";
 
 export const metadata = {
-  title: "Manutenção e Peças para Postos de Combustíveis | Mil Postos",
+  title: "Mil Postos",
   description:
     "Especialistas em manutenção de postos de combustíveis e venda de peças de alta qualidade. Confiança e eficiência para o seu negócio.",
   openGraph: {
-    title: "Manutenção e Peças para Postos de Combustíveis | Mil Postos",
+    title: "Mil Postos",
     description:
       "Especialistas em manutenção de postos de combustíveis e venda de peças de alta qualidade. Confiança e eficiência para o seu negócio.",
     images: [
@@ -42,11 +42,9 @@ export default function RootLayout({
         )}
       >
         <Providers themeProps={{ attribute: "class", defaultTheme: "light" }}>
-          <div className="relative flex flex-col h-screen">
+          <div className="">
             <Navbar />
-            <main className="container mx-auto max-w-[1400px] flex-grow">
-              {children}
-            </main>
+            <main className="">{children}</main>
             <Footer />
           </div>
         </Providers>

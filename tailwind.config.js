@@ -12,6 +12,9 @@ module.exports = {
       fontFamily: {
         sans: ["var(--font-sans)"],
         mono: ["var(--font-geist-mono)"],
+        digib: ['"DIGIB"', 'sans-serif'],
+        digiLG: ['"DIGILG"', 'sans-serif'],
+
       },
       colors: {
         primary: "#0E2752",

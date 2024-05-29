@@ -82,7 +82,7 @@ export default function Servicos() {
               ))}
               <Button
                 as={Link}
-                className="rounded-full justify-self-center bg-dark w-1/2 self-center md:text-lg"
+                className="rounded-full justify-self-center bg-dark w-1/2 self-center md:text-lg lg:w-1/3 lg:mt-5"
                 color="primary"
                 href="https://github.com/nextui-org/nextui"
                 variant="solid"
