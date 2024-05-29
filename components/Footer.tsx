@@ -83,7 +83,7 @@ export default function Footer() {
           </div>
         </div>
         {/* Links Contato */}
-        <ul className="contactsList my-3">
+        <ul className="contactsList my-3 text-white">
           <li>Contato</li>
           <li>
             <LocationIcon /> RUA MELCHIADES BRANDÃO 104, Campo Grande, Brasil
