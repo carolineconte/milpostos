@@ -13,7 +13,7 @@ export default function CTA({
   cta = " Precisa de Manutenção ou Instalação?",
 }: Props) {
   return (
-    <section className="py-4 mt-5 max-w-[900px] mx-auto rounded-lg bg-light flex flex-col text-center text-black items-center">
+    <section className="py-4 mt-5 max-w-[900px] mx-auto rounded-lg bg-white flex flex-col text-center text-black items-center">
       <Image alt="" src="Logo.png" />
       <h1 className="mx-5 leading-4 md:text-xl md:w-1/2 md:leading-4">
         {titulo}

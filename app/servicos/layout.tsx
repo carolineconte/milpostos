@@ -1,6 +1,27 @@
+import type { Metadata } from "next";
+
 import Hero from "@/components/Hero";
 
-export default function DocsLayout({
+export const metadata: Metadata = {
+  title: "Serviços de Manutenção para Postos de Combustíveis | Mil Postos",
+  description:
+    "Oferecemos serviços completos de manutenção para postos de combustíveis, garantindo segurança e eficiência para o seu negócio.",
+  openGraph: {
+    title: "Serviços de Manutenção para Postos de Combustíveis | Mil Postos",
+    description:
+      "Oferecemos serviços completos de manutenção para postos de combustíveis, garantindo segurança e eficiência para o seu negócio.",
+    images: [
+      {
+        url: "/Logo.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Serviços de Manutenção",
+      },
+    ],
+  },
+};
+
+export default function ServicesPage({
   children,
 }: {
   children: React.ReactNode;

@@ -8,7 +8,7 @@ export default function BlogPage() {
       <div className="px-5">
         <section
           className="pt-5 bg-cardBackground/60 flex flex-col justify-center items-center rounded cursor-pointer hover:bg-cardBackground
-        md:flex-row md:p-5 md:gap-5"
+        md:flex-row md:p-5 md:gap-5 max-w-[80%] mx-auto"
         >
           <Image alt="" src="/post.png" />
 

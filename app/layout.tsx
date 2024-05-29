@@ -1,32 +1,31 @@
 import "@/styles/globals.css";
 import "@/styles/EmblaStyle.css";
-import { Metadata } from "next";
 import clsx from "clsx";
 
 import { Providers } from "./providers";
 
-import { siteConfig } from "@/config/site";
 import { fontSans } from "@/config/fonts";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/Footer";
 
-export const metadata: Metadata = {
-  title: {
-    default: siteConfig.name,
-    template: `%s - ${siteConfig.name}`,
-  },
-  description: siteConfig.description,
-  icons: {
-    icon: "/favicon.ico",
+export const metadata = {
+  title: "Manutenção e Peças para Postos de Combustíveis | Mil Postos",
+  description:
+    "Especialistas em manutenção de postos de combustíveis e venda de peças de alta qualidade. Confiança e eficiência para o seu negócio.",
+  openGraph: {
+    title: "Manutenção e Peças para Postos de Combustíveis | Mil Postos",
+    description:
+      "Especialistas em manutenção de postos de combustíveis e venda de peças de alta qualidade. Confiança e eficiência para o seu negócio.",
+    images: [
+      {
+        url: "/Logo.png",
+        width: 1200,
+        height: 630,
+        alt: "Manutenção de Postos de Combustíveis",
+      },
+    ],
   },
 };
-
-// export const viewport: Viewport = {
-//   themeColor: [
-//     { media: "(prefers-color-scheme: light)", color: "white" },
-//     { media: "(prefers-color-scheme: dark)", color: "black" },
-//   ],
-// };
 
 export default function RootLayout({
   children,

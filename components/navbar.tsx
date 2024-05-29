@@ -4,6 +4,7 @@
 import Image from 'next/image'
 import React, { useState } from 'react'
 
+import MenuIcon from '@/components/icons/MenuIcon'
 import { siteConfig } from '@/config/site'
 
 const Navbar = () => {
@@ -27,10 +28,10 @@ const Navbar = () => {
           <button
             aria-expanded={isNavOpen}
             aria-label='abrir menu'
-            className='sm:hidden'
+            className='sm:hidden mr-5'
             onClick={() => setIsNavOpen(!isNavOpen)}
           >
-            abrir menu
+           <MenuIcon />
           </button>
         </div>
 

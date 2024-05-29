@@ -1,4 +1,24 @@
 import Hero from "@/components/Hero";
+
+export const metadata = {
+  title: "Blog | Mil Postos",
+  description:
+    "Dicas e novidades sobre manutenção de postos de combustíveis e peças de reposição. Fique por dentro das últimas tendências do setor.",
+  openGraph: {
+    title: "Blog | Mil Postos",
+    description:
+      "Dicas e novidades sobre manutenção de postos de combustíveis e peças de reposição. Fique por dentro das últimas tendências do setor.",
+    images: [
+      {
+        url: "/Logo.png",
+        width: 1200,
+        height: 630,
+        alt: "Blog sobre Manutenção de Postos",
+      },
+    ],
+  },
+};
+
 export default function BlogLayout({
   children,
 }: {

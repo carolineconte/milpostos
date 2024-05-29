@@ -37,13 +37,13 @@ export default function Produtos() {
         {siteConfig.produtos.map((cat) => (
           <section
             key={cat.categoria}
-            className="flex flex-col mt-10 p-5 scroll-mt-24 bg-cardBackground"
+            className="flex flex-col mt-10 p-5 scroll-mt-24 bg-cardBackground lg:p-10"
             id={cat.categoria}
           >
             <h1 className="font-extrabold text-primary text-2xl md:text-left md:text-3xl">
               {cat.categoria}
             </h1>
-            <div className="w-[90%] -ml-8 bg-primary h-[5px] rounded-full md:w-[55%]" />
+            <div className="w-[90%] -ml-8 bg-primary h-[5px] rounded-full md:w-[55%] lg:-ml-12 lg:w-[35%] lg:mb-10" />
             <div className="grid grid-cols-2 mt-2 py-2 bg-background rounded md:grid-cols-3">
               {cat.produtos.map((item, i) => (
                 <ProductCard key={i} {...item} />
@@ -52,7 +52,7 @@ export default function Produtos() {
             <Button
               key={cat.categoria}
               as={Link}
-              className="self-center mt-5 w-1/2"
+              className="self-center mt-5 w-1/2 lg:w-1/3"
               color="primary"
               href={`#${cat}`}
               variant="solid"
