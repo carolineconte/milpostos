@@ -43,14 +43,14 @@ section {
 }
 
 .heroBanner {
-  @apply bg-[url('/HeroBack.jpg')] min-h-[60vh];
+  @apply bg-[url('/HeroBack.jpg')] min-h-[70vh];
   @apply md:min-h-[55vh];
   @apply lg:min-h-[70vh] lg:mt-10;
 }
 
 
 .containerContadores {
-  @apply grid grid-cols-3 absolute -bottom-[30px];
+  @apply grid grid-cols-3 absolute -bottom-[40px];
   @apply md:-bottom-[50px];
 }
 

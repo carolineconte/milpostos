@@ -2,7 +2,7 @@ import Contador from "../Contador";
 
 export default function HeroBanner() {
   return (
-    <div className="heroBanner">
+    <div className="heroBanner pb-10 mt-12">
       <h1
         className="p-1 text-[2.5em] leading-10 font-bold
       md:text-[3em]"
