@@ -3,15 +3,20 @@ import { Accordion, AccordionItem, Button, Link } from "@nextui-org/react";
 
 import { siteConfig } from "@/config/site";
 import PostoIcon from "@/components/icons/PostoIcon";
+import MecanicoIcon from "@/components/icons/MecanicoIcon";
+import TanqueIcon from "@/components/icons/TanqueIcon";
+import BombaIcon from "@/components/icons/BombaIcon";
+import BicoIcon from "@/components/icons/BicoIcon";
+import MedidorIcon from "@/components/icons/MedidorIcon";
 
 export default function Servicos() {
   const icones = [
     <PostoIcon key={100} />,
-    <PostoIcon key={101} />,
-    <PostoIcon key={102} />,
-    <PostoIcon key={103} />,
-    <PostoIcon key={104} />,
-    <PostoIcon key={105} />,
+    <MecanicoIcon key={101} />,
+    <TanqueIcon key={102} />,
+    <BombaIcon key={103} />,
+    <BicoIcon key={104} />,
+    <MedidorIcon key={105} />,
   ];
 
   return (
@@ -62,7 +67,7 @@ export default function Servicos() {
               key={i}
               aria-label={item.titulo}
               className="flex flex-col w-full md:p-2 containerTitulo"
-              startContent={<PostoIcon />}
+              startContent={icones[i]}
               subtitle={item.subtitulo}
               title={item.titulo}
             >

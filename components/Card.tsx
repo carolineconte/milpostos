@@ -2,6 +2,11 @@ import { Link, Button } from "@nextui-org/react";
 import Image from "next/image";
 
 import PostoIcon from "@/components/icons/PostoIcon";
+import MecanicoIcon from "@/components/icons/MecanicoIcon";
+import TanqueIcon from "@/components/icons/TanqueIcon";
+import BombaIcon from "@/components/icons/BombaIcon";
+import BicoIcon from "@/components/icons/BicoIcon";
+import MedidorIcon from "@/components/icons/MedidorIcon";
 
 interface Props {
   title: string;
@@ -11,20 +16,18 @@ interface Props {
 export default function Card({ title, list, icon }: Props) {
   const icones = [
     <PostoIcon key={100} />,
-    <PostoIcon key={101} />,
-    <PostoIcon key={102} />,
-    <PostoIcon key={103} />,
-    <PostoIcon key={104} />,
-    <PostoIcon key={105} />,
+    <MecanicoIcon key={101} />,
+    <TanqueIcon key={102} />,
+    <BombaIcon key={103} />,
+    <BicoIcon key={104} />,
+    <MedidorIcon key={105} />,
   ];
 
   return (
     <section className="bg-cardBackground text-black p-3 rounded-lg flex flex-col grow justify-center gap-5">
-      <div
-        className={`${icon >= 0 ? "sm:flex items-end gap-5" : "flex items-center px-5"}`}
-      >
+      <div className={`${icon >= 0 ? "" : "flex items-center px-5"}`}>
         {icon >= 0 ? (
-          icones[icon]
+          <div className="w-[10px]">{icones[icon]}</div>
         ) : (
           <div>
             <Image alt="" height={50} src="/miniLogo.png" width={50} />
